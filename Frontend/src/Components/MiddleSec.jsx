@@ -17,7 +17,7 @@ const MiddleSec = () => {
   async function reviewCode() {
     try {
       setLoading(true);
-      const response = await axios.post("http://localhost:3000/ai/get-review", {
+      const response = await axios.post("https://codeloom-backend-j5nq.onrender.com/ai/get-review", {
         prompt: code,
       });
       setResult(response.data);
